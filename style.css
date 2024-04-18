@@ -1,59 +1,134 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header {
-    /* Styles for header elements like background color, navigation styling */
+nav li {
+    margin-right: 20px;
 }
 
-nav {
-    /* Styles for navigation bar like font size, color, spacing */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-.banner {
-    /* Styles for banner elements (logo and profile picture) */
-}
-
-.profile-picture {
-    /* Styles for profile picture (size, border-radius) */
-}
-
-.profile-picture-large {
-    /* Styles for large profile picture on home page */
+nav a:hover {
+    color: #000;
 }
 
 main {
-    /* Styles for main content area (padding, margin) */
+    padding: 50px 0;
 }
 
 section {
-    /* Styles for individual sections (margins, borders) */
+    margin-bottom: 50px;
 }
 
-.publications-container {
-    /* Styles for publications section (grid layout, spacing) */
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.accordion {
-    /* Styles for accordion element (borders, background) */
+.hero-text {
+    text-align: center;
 }
 
-.accordion-item {
-    /* Styles for individual accordion items */
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-.accordion-title {
-    /* Styles for accordion titles (cursor, hover effects) */
+.hero-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.accordion-content {
-    /* Styles for accordion content (padding, visibility) */
+.hero-text p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.more-about-me {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.more-about-me:hover {
+    background-color: #222;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.experience-container,
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience-container .experience-item,
+.portfolio-container .portfolio-item {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .contact-info {
-    /* Styles for contact information list (spacing, font size) */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Additional styles for forms, social media icons, etc. */
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
