@@ -1,259 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpita Mahata</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1; /* Light background */
-            color: #333; /* Dark text */
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #FFFFFF; /* Header background color */
-            color: #333; /* Header text color */
-            text-align: left;
-            padding: 40px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
-        }
-
-        /* Navigation Styles */
-        nav {
-            background-color: #444; /* Navigation background color */
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff; /* Navigation link text color */
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            color: #f1f1f1; /* Hover color */
-        }
-
-        /* Main Content Styles */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff; /* Content background color */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to content */
-            border-radius: 10px; /* Rounded corners for content */
-            margin-top: -40px; /* Overlap content with header */
-            position: relative;
-        }
-
-        .container h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .container p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #333; /* Footer background color */
-            color: #fff; /* Footer text color */
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Card Animation Styles */
-        .info-card {
-            background-color: #FFFFFF; /* White background */
-            color: #333; /* Dark text */
-            margin: 20px;
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
-            width: calc(33.33% - 40px); /* Divide the width by 3 and account for margins */
-            display: inline-block;
-            vertical-align: top; /* Align cards to the top */
-            box-sizing: border-box; /* Include padding and border in width */
-            /* Add hover animation */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        /* Apply hover animation when element is hovered */
-        .info-card:hover {
-            transform: translateY(-10px); /* Move card up on hover */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
-        }
-
-        .info-card h3 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .info-card p {
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        /* Profile Picture and Contact Tab Card (on the right) */
-        .profile-card {
-            background-color: #C9A9A6; /* Dusty Rose background */
-            color: #FFFFFF;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
-            width: calc(30% - 40px); /* Twice the width of other cards */
-            display: inline-block;
-            vertical-align: top; /* Align card to the top */
-            box-sizing: border-box; /* Include padding and border in width */
-            float: right; /* Float the card to the right */
-            position: relative;
-        }
-
-        .profile-card img {
-            border-radius: 50%; /* Make the image circular */
-            width: 250px;
-            height: 250px;
-            position: absolute; /* Position the image absolutely */
-            right: 140px;
-            top: 0;
-            transform: translate(50%, -50%); /* Center the image within the card */
-        }
-
-        .profile-card .contact-tab {
-            background-color: #FFFFFF;
-            color: #C9A9A6; /* Dusty Rose text */
-            padding: 10px 20px;
-            border-radius: 4px; /* Regular border-radius */
-            display: block;
-            margin-top: 10px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .profile-card .contact-tab:hover {
-            background-color: #147;
-            border: 2px solid #FFFFFF;
-        }
-
-        /* GitHub Icon */
-        .github-icon {
-            font-size: 24px;
-            color: #333;
-            text-decoration: none;
-            display: inline-block;
-            margin-left: 10px; /* Add margin to separate the contact tab and GitHub icon */
-        }
-
-        .github-icon:hover {
-            color: #147; /* Change color on hover */
-        }
-
-        /* Add hover effect for navigation links */
-        nav a:hover {
-            color: #A8C700; /* Change text color on hover */
-            text-decoration: underline; /* Add underline on hover */
-            transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
-        }
-    </style>
+    <title>Your Name - Academic Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <img src="profile_picture.jpg" alt="Header Picture" style="width: 500px; height: auto; float: left; margin-right: -10px;">
-        <br><br><br><br><br><h1>Arpita Mahata</h1><br>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="institute_image.jpg" alt="Institute Logo">
+            <img src="your_profile_picture.jpg" alt="Your Photo" class="profile-picture">
+        </div>
     </header>
 
-    <!-- Profile Picture and Contact Tab Card -->
-    <div class="profile-card">
-        <img src="profile_picture.jpg" alt="Your Profile Picture">
-        <br><br><br><br><br>
-        <p style="font-size: 24px; font-weight: bold;">Hello! I'm
-        <p style="font-size: 24px; font-weight: bold;">Hello! I'm Arpita Mahata</p> <!-- Adjust font size and add bold -->
-        <p> Phonetic Spelling: [ er - p ee - t ah ] [m-uh-h-AA-t-aa] </p>
-        <p> Bio: Chasing life's clues</p>
-        <p> Age: 22 </p>
-        <p> Location: Kolkata, India </p>
-        <div class="contact">
-            <a class="contact-tab" href="arpitabiophy@gmail.com">Contact</a>
-            <br>
-            <a class="github-icon" href="https://github.com/ArpitaML" target="_blank"><i class="fab fa-github"></i></a> <!-- GitHub icon with link -->
-        </div>
-    </div>
+    <main>
+        <section id="home">
+            <img src="your_profile_picture.jpg" alt="Your Photo" class="profile-picture-large">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed eu risus ante. Donec sed odio dui. Sed euismod risus sit 
+                    amet consectetur adipiscing elit. Pellentesque maximus sem quis 
+                    libero molestie aliquam. Donec imperdiet sapien ut elit 
+                    pellentesque aliquam. Donec imperdiet sapien ut elit 
+                    pellentesque aliquam. 
+                </p>
+                <ul class="contact-info">
+                    <li><a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a></li>
+                    <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Navigation Links -->
-    <nav class="menu">
-        <ul id="navigation" class="slimmenu">
-            <a href="research.html">Work Experience</a>
-            <a href="academic_journey.html">Academic Journey</a>
-            <a href="skills.html">Skills</a>
-        </ul>
-    </nav>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>List your publications here. You can use a bulleted list with hyperlinks to the publications or a table with additional information like authors, year, and publication venue (similar to https://saswatdas.com/)</p>
+        </section>
 
-    <!-- About Me Card -->
-    <div class="info-card in-viewport">
-        <h3>About Me</h3>
-        <p>
-            I am a diligent and dedicated researcher with a profound commitment to advancing the field of Systems Biology and the study of intricate biological systems. My academic journey is underpinned by a master's degree in Biophysics and Molecular Biology, complemented by a strong foundation in Physics acquired during my bachelor's studies.
-        </p>
-    </div>
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Provide a link to your downloadable CV (similar to https://journals.sagepub.com/doi/abs/10.1177/0020720918822754) or embed it directly on the page if desired.</p>
+        </section>
 
-    <!-- Passion and Aspirations Card -->
-    <div class="info-card in-viewport">
-        <h3>Passion and Aspirations</h3>
-        <p>
-            Complementing my academic commitments, I possess a genuine passion for education. Whether I am enjoying cinematic experiences, expressing my creativity through painting, indulging in literary pursuits, or finding inspiration in music, these activities serve as vital sources of equilibrium, enriching my research endeavors.
-        </p>
-    </div>
+        <section id="news">
+            <h2>News</h2>
+            <p>Share any recent news or updates here.</p>
+        </section>
 
-    <!-- Academic Background Card -->
-    <div class="info-card in-viewport">
-        <h3>Academic Background</h3>
-        <p>
-            My master's degree in Biophysics and Molecular Biology has equipped me with a rigorous understanding of Mathematical Biology, particularly Non-Linear Dynamics, Computational Biology, including proficiency in Python programming as well as . Throughout my academic journey, I have consistently pursued excellence, employing principles of Physics, Mathematics, and advanced Computational techniques to dissect and understand the intricacies of biological systems.
-        </p>
-    </div>
+        <section id="people">
+            <h2>People</h2>
+            <p>If applicable, introduce your colleagues or collaborators here.</p>
+        </section>
 
-    <!-- Research Endeavors Card -->
-    <div class="info-card in-viewport">
-        <h3>Research Endeavors</h3>
-        <p>
-            My research endeavors have led me to work significantly in the field of Epidemiological Modeling, where I engaged in the development of mathematical models for Malaria. Additionally, I conducted research in experimental biophysics, focusing on elucidating the biochemical activity of Azoreductase protein. Building upon this foundation, I am presently immersed in a computational biophysics laboratory, where I employ Machine Learning techniques to study the evolution of viruses through 1D sequence analysis. My multidisciplinary approach allows me to explore diverse facets of biological research and positions me as an ideal candidate for a Systems Biology laboratory.
-        </p>
-    </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out using the information below or a contact form (similar to https://journals.sagepub.com/doi/abs/10.1177/0020720918822754).</p>
+            <ul class="contact-info">
+                <li><a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a></li>
+                <li><a href="tel:+1234567890">+123 456 7890</a></li>
+            </ul>
+        </section>
 
-    <!-- Future Aspirations Card -->
-    <div class="info-card in-viewport">
-        <h3>Future Aspirations</h3>
-        <p>
-            Looking ahead, I am enthused about the prospect of pursuing a Ph.D. degree in Systems Biology. My aspiration is to make substantive contributions to the discipline and perpetuate my intellectual voyage of discovery. I firmly believe that research is not just a vocation; it is a lifelong odyssey driven by an insatiable quest for knowledge, one that has the potential to reshape our comprehension of the world.
-        </p>
-    </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
