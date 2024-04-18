@@ -1,18 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Add a click event listener to each project heading
-    const projectHeadings = document.querySelectorAll('.project h3');
+// Smooth Scrolling
+const navigationLinks = document.querySelectorAll('nav a');
 
-    projectHeadings.forEach(heading => {
-        heading.addEventListener('click', function () {
-            // Toggle the class 'show' on the parent project div
-            this.parentNode.classList.toggle('show');
+navigationLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href');
+        const section = document.querySelector(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+});
 
-            // Close other projects when one is opened
-            projectHeadings.forEach(otherHeading => {
-                if (otherHeading !== heading) {
-                    otherHeading.parentNode.classList.remove('show');
-                }
-            });
-        });
+// Accordion Functionality
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+    const title = item.querySelector('.accordion-title');
+    const content = item.querySelector('.accordion-content');
+
+    title.addEventListener('click', () => {
+        content.classList.toggle('active');
+        title.classList.toggle('active');
     });
 });
