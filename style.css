@@ -5,7 +5,55 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5
+    /* Styles for header elements like background color, navigation styling */
+}
+
+nav {
+    /* Styles for navigation bar like font size, color, spacing */
+}
+
+.banner {
+    /* Styles for banner elements (logo and profile picture) */
+}
+
+.profile-picture {
+    /* Styles for profile picture (size, border-radius) */
+}
+
+.profile-picture-large {
+    /* Styles for large profile picture on home page */
+}
+
+main {
+    /* Styles for main content area (padding, margin) */
+}
+
+section {
+    /* Styles for individual sections (margins, borders) */
+}
+
+.publications-container {
+    /* Styles for publications section (grid layout, spacing) */
+}
+
+.accordion {
+    /* Styles for accordion element (borders, background) */
+}
+
+.accordion-item {
+    /* Styles for individual accordion items */
+}
+
+.accordion-title {
+    /* Styles for accordion titles (cursor, hover effects) */
+}
+
+.accordion-content {
+    /* Styles for accordion content (padding, visibility) */
+}
+
+.contact-info {
+    /* Styles for contact information list (spacing, font size) */
+}
+
+/* Additional styles for forms, social media icons, etc. */
